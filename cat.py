@@ -6,7 +6,7 @@ class Cat(Animal):
     def __init__(self):
         self.hair = "短毛"
         # 继承父类的方法
-        super().__init__()
+        super().__init__("小猫")
 
     def catch(self):
         print("会捉老鼠")

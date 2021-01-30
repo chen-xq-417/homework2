@@ -5,8 +5,8 @@
 # 添加一个新的方法， 会捉老鼠，
 # 重写父类的【会叫】的方法，改成【喵喵叫】
 class Animal(object):
-    def __init__(self):
-        self.name = "小白"
+    def __init__(self, name):
+        self.name = name
         self.color = "white"
         self.age = "1"
         self.gender = "female"
@@ -19,7 +19,7 @@ class Animal(object):
 
 
 if __name__ == '__main__':
-    animal = Animal()
+    animal = Animal("小白")
 
     animal.talk()
     print(animal.name)
